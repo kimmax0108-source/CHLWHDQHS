@@ -1,0 +1,175 @@
+{
+  "version": 3,
+  "settings": {
+    "template_path": "",
+    "output_dir": "",
+    "last_site": "세종 5-1 L12BL",
+    "last_item": "포세식 화장실 임차"
+  },
+  "sites": [
+    {
+      "name": "세종 5-1 L12BL",
+      "short_name": "세종(5-1)",
+      "full_name": "세종 행정중심 복합도시 5-1생활권 L12BL 아파트건설공사",
+      "drafter": "김 태 강",
+      "department": "자 재 부",
+      "effective_date": "결재후 즉시",
+      "attachment": "구매물품내역서",
+      "payment": "기성결제 현금",
+      "delivery_place": "세종 스마트시티"
+    }
+  ],
+  "items": [
+    {
+      "name": "포세식 화장실 임차",
+      "sheet_label": "포세식화장실",
+      "title": "포세식 화장실 임차",
+      "purchase_item_name": "포세식 화장실(3 * 6, 2EA)",
+      "statement_title": "포세식 화장실 임차(18개월)",
+      "period_kind": "임차기간",
+      "period": "",
+      "attachment": "구매물품내역서",
+      "payment": "기성결제 현금",
+      "body_template": "{site}의 근로자 화장실 운용을 위한 포세식 화장실 임차업체를 선정하여 품의하오니 결재하여 주시기 바랍니다.",
+      "note": "",
+      "items": [
+        {
+          "name": "포세식 화장실",
+          "spec": "3 * 6",
+          "unit": "EA",
+          "quantity": 2,
+          "unit_prices": [],
+          "note": "",
+          "group_title": "포세식 화장실 임차(18개월)",
+          "group_sequence": "1"
+        },
+        {
+          "name": "운반비",
+          "spec": "2.6 * 6",
+          "unit": "회",
+          "quantity": 2,
+          "unit_prices": [],
+          "note": "",
+          "group_title": "",
+          "group_sequence": ""
+        }
+      ]
+    },
+    {
+      "name": "호이스트 임차",
+      "sheet_label": "호이스트",
+      "title": "호이스트 임차",
+      "purchase_item_name": "호이스트(1.2ton, 싱글, 21대)",
+      "statement_title": "호이스트 임차",
+      "period_kind": "임차기간",
+      "period": "",
+      "attachment": "구매물품내역서",
+      "payment": "기성결제 현금",
+      "body_template": "{site} 현장의 호이스트 임차업체를 선정하여 품의하오니 결재하여 주시기 바랍니다.",
+      "note": "",
+      "items": [
+        {
+          "name": "호이스트 임차",
+          "spec": "1.2ton, 싱글",
+          "unit": "대",
+          "quantity": 21,
+          "unit_prices": [],
+          "note": "",
+          "group_title": "호이스트 임차",
+          "group_sequence": "1"
+        }
+      ]
+    },
+    {
+      "name": "컨테이너 임차",
+      "sheet_label": "컨테이너",
+      "title": "컨테이너 임차",
+      "purchase_item_name": "컨테이너",
+      "statement_title": "컨테이너 임차",
+      "period_kind": "임차기간",
+      "period": "",
+      "attachment": "구매물품내역서",
+      "payment": "기성결제 현금",
+      "body_template": "{site}의 임시 사무실 용도의 컨테이너를 임차하고자 업체를 선정하여 품의하오니 결재하여 주시기 바랍니다.",
+      "note": "",
+      "items": [
+        {
+          "name": "컨테이너 임차",
+          "spec": "",
+          "unit": "동",
+          "quantity": 1,
+          "unit_prices": [],
+          "note": "",
+          "group_title": "컨테이너 임차",
+          "group_sequence": "1"
+        },
+        {
+          "name": "운반 및 설치",
+          "spec": "",
+          "unit": "식",
+          "quantity": 1,
+          "unit_prices": [],
+          "note": "",
+          "group_title": "",
+          "group_sequence": ""
+        }
+      ]
+    },
+    {
+      "name": "위생기·욕조 구매",
+      "sheet_label": "위생기",
+      "title": "위생기·욕조 구매",
+      "purchase_item_name": "위생기(도기 외 3종), 욕조",
+      "statement_title": "위생기·욕조 구매",
+      "period_kind": "납품일자",
+      "period": "",
+      "attachment": "구매물품내역서",
+      "payment": "기성결제 현금",
+      "body_template": "{site}의 위생기류 및 욕조 구매업체를 선정하여 품의하오니 결재하여 주시기 바랍니다.",
+      "note": "※ 유상옵션(내역서 참조) : 품목별 단가계약, 옵션신청현황에 따라 변경계약 예정",
+      "items": []
+    },
+    {
+      "name": "자동세륜기 임차",
+      "sheet_label": "자동세륜기",
+      "title": "자동세륜기 임차(BUY-BACK)",
+      "purchase_item_name": "자동세륜기(10ROLL, 1EA)",
+      "statement_title": "자동세륜기 임차",
+      "period_kind": "임차기간",
+      "period": "",
+      "attachment": "구매물품내역서",
+      "payment": "기성결제 현금",
+      "body_template": "{site}의 세륜기 임차업체를 선정하여 품의하오니 결재하여 주시기 바랍니다.",
+      "note": "",
+      "items": []
+    },
+    {
+      "name": "타워크레인 임차",
+      "sheet_label": "타워크레인",
+      "title": "타워크레인 임차(설치/해체)",
+      "purchase_item_name": "타워크레인",
+      "statement_title": "타워크레인 임차",
+      "period_kind": "임차기간",
+      "period": "",
+      "attachment": "구매물품내역서",
+      "payment": "기성결제 현금",
+      "body_template": "{site}의 타워크레인 임차업체를 선정하여 품의하오니 결재하여 주시기 바랍니다.",
+      "note": "",
+      "items": []
+    },
+    {
+      "name": "빈 품목",
+      "sheet_label": "품목",
+      "title": "",
+      "purchase_item_name": "",
+      "statement_title": "",
+      "period_kind": "계약기간",
+      "period": "",
+      "attachment": "구매물품내역서",
+      "payment": "기성결제 현금",
+      "body_template": "{site} 현장의 업체를 선정하여 품의하오니 결재하여 주시기 바랍니다.",
+      "note": "",
+      "items": []
+    }
+  ]
+}

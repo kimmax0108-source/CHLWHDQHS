@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest==9.0.2
+pytest-cov==7.0.0
+ruff==0.14.11
+pyinstaller==6.18.0
+lxml>=5.3,<7

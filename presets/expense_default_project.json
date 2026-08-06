@@ -1,0 +1,41 @@
+{
+  "payment_month": 8,
+  "written_date": "2025-09-30",
+  "writer": "김태강",
+  "payment_title": "정기결제",
+  "vat_included": true,
+  "allocations": [
+    {
+      "month": 8,
+      "site_name": "연신내 주상복합",
+      "vendor_name": "리소스뱅크㈜",
+      "quantity": "187.114",
+      "amount": 149547354
+    },
+    {
+      "month": 8,
+      "site_name": "",
+      "vendor_name": "동경강업㈜",
+      "quantity": "25.976",
+      "amount": 22001672
+    }
+  ],
+  "descriptions": [
+    "철근구입비-정기결제",
+    "부가세 포함"
+  ],
+  "vendor_accounts": [
+    {
+      "vendor_name": "리소스뱅크㈜",
+      "bank_name": "우리",
+      "account_number": "1005-204-378238",
+      "account_holder": "리소스뱅크㈜"
+    },
+    {
+      "vendor_name": "동경강업㈜",
+      "bank_name": "기업",
+      "account_number": "378-023864-04-011",
+      "account_holder": "동경강업㈜"
+    }
+  ]
+}

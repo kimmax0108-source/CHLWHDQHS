@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "material-document-standardization"
+version = "2.0.0"
+description = "구매품의서·지출결의서·자재 입고 청구관리를 통합한 자재 문서 표준화 프로그램"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+  "PySide6==6.11.1",
+  "openpyxl==3.1.5",
+  "xlrd==2.0.2",
+]
+
+[project.scripts]
+material-documents = "material_document_app.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 110
+exclude = ["dist", "build"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

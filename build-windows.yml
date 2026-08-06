@@ -1,0 +1,63 @@
+name: Build Windows EXE
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+env:
+  PYTHONUTF8: "1"
+  PYTHONIOENCODING: "utf-8"
+  QT_QPA_PLATFORM: "offscreen"
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: Run tests
+        run: python -m pytest
+
+      - name: Build EXE
+        run: pyinstaller --noconfirm --clean material_document_standardization.spec
+
+      - name: Package
+        shell: pwsh
+        run: |
+          $exe = "dist/material_document_standardization.exe"
+          if (!(Test-Path $exe)) { throw "EXE was not created: $exe" }
+          $zip = "dist/material_document_standardization_v2.0.0_windows.zip"
+          Compress-Archive -Path $exe, README.md, GITHUB_UPLOAD_GUIDE_KO.md -DestinationPath $zip -Force
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: material-document-standardization-v2-windows
+          path: dist/material_document_standardization_v2.0.0_windows.zip
+          if-no-files-found: error
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          gh release create "${{ github.ref_name }}" `
+            "dist/material_document_standardization_v2.0.0_windows.zip" `
+            --title "${{ github.ref_name }}" `
+            --generate-notes
